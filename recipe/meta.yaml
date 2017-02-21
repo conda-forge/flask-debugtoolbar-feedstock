@@ -1,8 +1,8 @@
 {%set name = "Flask-DebugToolbar" %}
-{%set version = "0.10.0" %}
+{%set version = "0.10.1" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "d10cb2f58c9cc40e8bb8eb7e086cf3a5c18a7d00dab4a1561fe91e3cea92faf3" %}
+{%set hash_val = "ec810083123aae0632eb32ba11e1cb4cdace81e7ce6c5009dd06c5204afbce52" %}
 {%set build_num = "0" %}
 
 package:
