@@ -11,6 +11,18 @@ Summary: A toolbar overlay for debugging Flask applications.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/flask-debugtoolbar-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/flask-debugtoolbar-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/flask-debugtoolbar-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/flask-debugtoolbar-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/flask-debugtoolbar-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/flask-debugtoolbar-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flask-debugtoolbar/badges/version.svg)](https://anaconda.org/conda-forge/flask-debugtoolbar)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flask-debugtoolbar/badges/downloads.svg)](https://anaconda.org/conda-forge/flask-debugtoolbar)
+
 Installing flask-debugtoolbar
 =============================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `flask-debugtoolbar` available on 
 ```
 conda search flask-debugtoolbar --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/flask-debugtoolbar-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/flask-debugtoolbar-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/flask-debugtoolbar-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/flask-debugtoolbar-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/flask-debugtoolbar-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/flask-debugtoolbar-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flask-debugtoolbar/badges/version.svg)](https://anaconda.org/conda-forge/flask-debugtoolbar)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flask-debugtoolbar/badges/downloads.svg)](https://anaconda.org/conda-forge/flask-debugtoolbar)
 
 
 Updating flask-debugtoolbar-feedstock
