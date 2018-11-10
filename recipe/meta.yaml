@@ -1,9 +1,7 @@
-{%set name = "Flask-DebugToolbar" %}
-{%set version = "0.10.1" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "ec810083123aae0632eb32ba11e1cb4cdace81e7ce6c5009dd06c5204afbce52" %}
-{%set build_num = "0" %}
+{% set name = "Flask-DebugToolbar" %}
+{% set version = "0.10.1" %}
+{% set compress_type = "tar.gz" %}
+{% set sha256 = "ec810083123aae0632eb32ba11e1cb4cdace81e7ce6c5009dd06c5204afbce52" %}
 
 package:
   name: {{ name|lower }}
@@ -12,17 +10,16 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ compress_type }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  sha256: {{ sha256 }}
 
 build:
-  number: {{ build_num }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1000
+  script: "{{ PYTHON }} -m pip install . -vvv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
-
+    - pip
   run:
     - python
     - flask >=0.8
