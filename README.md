@@ -5,11 +5,13 @@ Home: http://flask-debugtoolbar.rtfd.org/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-debugtoolbar-feedstock/blob/master/LICENSE.txt)
 
 Summary: A toolbar overlay for debugging Flask applications.
 
+Development: https://github.com/mgood/flask-debugtoolbar
 
+Documentation: http://flask-debugtoolbar.rtfd.org/
 
 Current build status
 ====================
