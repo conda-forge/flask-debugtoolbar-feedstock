@@ -1,20 +1,17 @@
 {% set name = "Flask-DebugToolbar" %}
-{% set version = "0.10.1" %}
-{% set compress_type = "tar.gz" %}
-{% set sha256 = "ec810083123aae0632eb32ba11e1cb4cdace81e7ce6c5009dd06c5204afbce52" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 3c4e79d354ede014e6657c545a536d4fb273cc89e3fd6b4835b02e346dd3aab4
 
 build:
-  number: 1003
-  script: "{{ PYTHON }} -m pip install . -vvv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,6 +28,10 @@ test:
     - flask_debugtoolbar.compat
     - flask_debugtoolbar.toolbar
     - flask_debugtoolbar.utils
+  commands:
+    - pip check
+  requires: 
+    - pip
 
 about:
   home: http://flask-debugtoolbar.rtfd.org/
