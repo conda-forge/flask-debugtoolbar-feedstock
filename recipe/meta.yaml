@@ -21,6 +21,7 @@ requirements:
   run:
     - python >=3.6
     - flask >=0.8
+    - blinker
 
 test:
   imports:
