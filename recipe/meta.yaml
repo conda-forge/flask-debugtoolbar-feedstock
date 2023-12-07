@@ -22,6 +22,7 @@ requirements:
     - python >=3.6
     - flask >=0.8
     - blinker
+    - packaging
 
 test:
   imports:
