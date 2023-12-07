@@ -1,5 +1,5 @@
 {% set name = "flask-debugtoolbar" %}
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Flask-DebugToolbar-{{ version }}.tar.gz
-  sha256: bd0435e902a02b2efc1e8cdddca0f4e4c1b746d68c8b860e449984e962766a18
+  sha256: ccd6a72119ea4f7c486823591b2b2f4a14dc7fb38d6bd495272e0ebdc08724cd
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
