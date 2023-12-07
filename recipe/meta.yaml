@@ -1,4 +1,4 @@
-{% set name = "Flask-DebugToolbar" %}
+{% set name = "flask-debugtoolbar" %}
 {% set version = "0.14.0" %}
 
 package:
@@ -6,23 +6,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Flask-DebugToolbar-{{ version }}.tar.gz
   sha256: bd0435e902a02b2efc1e8cdddca0f4e4c1b746d68c8b860e449984e962766a18
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
     - python >=3.6
+    - setuptools >=42
+    - wheel
     - pip
   run:
     - python >=3.6
     - flask >=0.8
     - blinker
-    - packaging
+    - itsdangerous
+    - werkzeug
+    - markupsafe
 
 test:
   imports:
