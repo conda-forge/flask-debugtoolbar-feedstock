@@ -1,13 +1,13 @@
 {% set name = "flask-debugtoolbar" %}
-{% set version = "0.14.1" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Flask-DebugToolbar-{{ version }}.tar.gz
-  sha256: ccd6a72119ea4f7c486823591b2b2f4a14dc7fb38d6bd495272e0ebdc08724cd
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 191ad326a447dfe1516196b3474c84b9800b5feafa99aad8149c52525ab347fb
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - flask >=0.8
+    - flask >=2.2.0
     - blinker
     - packaging
     - itsdangerous
