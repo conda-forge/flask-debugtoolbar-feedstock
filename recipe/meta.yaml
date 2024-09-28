@@ -33,10 +33,6 @@ requirements:
 test:
   imports:
     - flask_debugtoolbar
-    - flask_debugtoolbar.panels
-    - flask_debugtoolbar.compat
-    - flask_debugtoolbar.toolbar
-    - flask_debugtoolbar.utils
   commands:
     - pip check
   requires:
