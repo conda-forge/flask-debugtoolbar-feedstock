@@ -1,5 +1,5 @@
 {% set name = "flask-debugtoolbar" %}
-{% set version = "0.15.1" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 8c76666f1553641567da8d91c74fe92caa072cfc01429564aa5e109de10b1806
+  sha256: 3b925d4dcc09205471e5021019dfeb0eb6dabd6c184de16a3496dfb1f342afe1
 
 build:
   noarch: python
@@ -20,9 +20,10 @@ requirements:
     - setuptools >=42
     - wheel
     - pip
+    - flit-core
   run:
     - python >=3.6
-    - flask >=2.2.0
+    - flask >=2.3.0
     - blinker
     - packaging
     - itsdangerous
@@ -32,10 +33,6 @@ requirements:
 test:
   imports:
     - flask_debugtoolbar
-    - flask_debugtoolbar.panels
-    - flask_debugtoolbar.compat
-    - flask_debugtoolbar.toolbar
-    - flask_debugtoolbar.utils
   commands:
     - pip check
   requires:
